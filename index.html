@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Form</title>
+  <style>
+    body {
+      background-color: #80C850;
+      font-family: sans-serif;
+    }
+
+    .container {
+      width: 300px;
+      margin: 100px auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 90%;
+      padding: 15px;
+      margin: 5px 0 20px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+      opacity: 0.7;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    
+    }
+
+    button:hover {
+      opacity: 1;
+    }
+
+    .container span {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+      opacity: 0.6;
+    }
+    .container span a{
+        color: #4CAF50;
+        text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form id="loginForm">
+      <div>
+        <input type="text" id="username" name="username" placeholder="username" required>
+      </div>
+      <div>
+        <input type="password" id="password" name="password" placeholder="password" required>
+      </div>
+      <button type="submit">LOGIN</button>
+      <span>Not registered? <a href="#">Create an account</a></span>
+    </form>
+  </div>
+</body>
+</html>
